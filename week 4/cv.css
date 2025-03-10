@@ -68,3 +68,6 @@ my-list {
     shape-image-threshold: calc();
     display:block;
     margin:0 auto 20px; }
+    thead tr th {
+        color: rgb(162, 77, 77);
+      }
