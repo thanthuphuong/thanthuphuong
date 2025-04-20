@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--JavaScript-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ex02</title>
+        <script language="javascript">
+            var txta = prompt ("Enter number A");
+            var txtb = prompt ("Enter number B");
+            if(txta == null || txta == "" || isNaN(txta)) {
+                alert("Number A is formatted incorrect");
+            }else if(txtb == null || txtb == "" || isNaN(txtb)) {
+                alert("Number B is formatted incorrect");
+            }else{
+                var result = parseFloat(txta) + parseFloat(txtb);
+                alert("Result:\n" +
+                    txta + " + " + txtb + " = " + result);}
+                
+        </script>
+    </head>
+<body>
+</body>
+</html>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dates in month</title>
+<script language="javascrip" >
+function isLeapYear(n) {
+return (n%4==0 && n%100!=0)||n%400==0;}
+function update() {
+    year = document.f.year;
+    month = document.f.month;
+    date = document.f.date;
+    if (year.value=="" || isNaN(year.value)) {
+        date.value = "Year must be a number";
+        year.focus();
+    }else 
+        switch (month.value) {
+            case "1":
+            case "3":
+            case "5":
+            case "7":
+            case "8":
+            case "10":
+            case "12":
+                date.value = 31;
+                break;
+            case "4":
+            case "6":
+            case "9":
+            case "11":
+                date.value = 30;
+                break;
+            case "2":
+ date.value - isLeapYear (year.value) ? 29: 28; break;
+}}
+</script>
+</head>
+<body onload="update () ">
+<form name="*">
+<table border="0" align="center">
+<tr><td colspan="2" align="center">
+<h2>DATES IN MONTH</h2></td></tr>
+<tr><td align="right">Year: </td>
+<td><input name="year" value="2012"
+onblur="update ()" /></td>
+</tr>
+<tr><td align="right">Month: </td>
+<td><select name="month" onblur="update () ">
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+</td></tr>
+<tr><td align-"right">Date: </td>
+<td><input name="date" readonly="readonly" /></td>
+</tr>
+</table>
+</form></body></html>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <!--JavaScript-->
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title>ex02</title>
+            <script language="javascript">
+                var txta = prompt ("Enter number A");
+                var txtb = prompt ("Enter number B");
+                if(txta == null || txta == "" || isNaN(txta)) {
+                    alert("Number A is formatted incorrect");
+                }else if(txtb == null || txtb == "" || isNaN(txtb)) {
+                    alert("Number B is formatted incorrect");
+                }else{
+                    var result = parseFloat(txta) + parseFloat(txtb);
+                    alert("Result:\n" +
+                        txta + " + " + txtb + " = " + result);}
+                    
+            </script>
+        </head>
+    <body>
+    </body>
+    </html>
+
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <title>Dates in month</title>
+    <script language="javascrip" >
+    function isLeapYear(n) {
+    return (n%4==0 && n%100!=0)||n%400==0;}
+    function update() {
+        year = document.f.year;
+        month = document.f.month;
+        date = document.f.date;
+        if (year.value=="" || isNaN(year.value)) {
+            date.value = "Year must be a number";
+            year.focus();
+        }else 
+            switch (month.value) {
+                case "1":
+                case "3":
+                case "5":
+                case "7":
+                case "8":
+                case "10":
+                case "12":
+                    date.value = 31;
+                    break;
+                case "4":
+                case "6":
+                case "9":
+                case "11":
+                    date.value = 30;
+                    break;
+                case "2":
+     date.value - isLeapYear (year.value) ? 29: 28; break;
+    }}
+    </script>
+    </head>
+    <body onload="update () ">
+    <form name="*">
+    <table border="0" align="center">
+    <tr><td colspan="2" align="center">
+    <h2>DATES IN MONTH</h2></td></tr>
+    <tr><td align="right">Year: </td>
+    <td><input name="year" value="2012"
+    onblur="update ()" /></td>
+    </tr>
+    <tr><td align="right">Month: </td>
+    <td><select name="month" onblur="update () ">
+    <option value="1">01</option>
+    <option value="2">02</option>
+    <option value="3">03</option>
+    <option value="4">04</option>
+    <option value="5">05</option>
+    <option value="6">06</option>
+    <option value="7">07</option>
+    <option value="8">08</option>
+    <option value="9">09</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    </select>
+    </td></tr>
+    <tr><td align-"right">Date: </td>
+    <td><input name="date" readonly="readonly" /></td>
+    </tr>
+    </table>
+    </form></body></html>
+
+
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <title>Multiplication table</title>
+    <script language="javascript">
+    function display () {
+    a = document.f.a;
+    //access the iframe "view area"
+    var txt = document.getElementById ("view _area").contentWindow;
+
+    txt.document.body.innerHTML = ""; //clear old content.
+    if (a.value == "" || isNaN(a.value))
+    txt.document.write ("<font color='red'>You must enter a number</font>") ;
+    else {
+    txt.document.write ("<b>Multiplication table" + a.value + ":</b><br/>"); 
+    for (i=1; 1<=10; i++)
+    txt.document.write(a.value + "x" + i + " = " + (i*a.value) + "<br/>") ;}}
+    </script>
+    </head>
+    <body>
+    <form name="f">
+    <table border="0" align="center">
+    <tr><td colspan="2" align="center">
+    <h2>MULTIPLICATION TABLE</h2></td></tr>
+    <tr><td align="right">
+    Which multiplication table that you want to display?</td>
+    <td><input name="a" size="5" onchange="display ()" /></td></tr>
+    <tr><td colspan="2" align="center">
+    <iframe id="view_area" width="230" height="250"></iframe></td></tr>
+    </table>
+    </form>
+    </body>
+    </html>
