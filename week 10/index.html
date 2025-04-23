@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" id="from_main">
+        <input type="number"id="number1">
+        <br>
+        <button onclink="checkNumber();" on>check</button>
+    </form>
+    <!--JavaScript-->
+    <script>
+        function checkNumber() {
+            var x= parseInt(document.getElementById("number1").value);
+            if (x % 2 == 0) {
+               // method 1: create a new element
+                var newElement = document.createElement("p");
+                result.innerHTML = x + " is even";
+                document.getElementById("from_main").appendChild(newElement);
+                // method 2: use innerHTML
+                //document.getElementById("from_main").innerHTML = x + " is even";
+            } else {
+                //document.write(x + " is odd")
+            }
+        }
+    </script>
+</body>
+</html>
